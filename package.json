@@ -4,16 +4,10 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "nodemon --exec yarn electron ."
   },
   "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
+  "keywords": [],
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
@@ -26,6 +20,7 @@
     "babel-loader": "^8.0.0-beta.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "electron": "^1.8.4",
+    "nodemon": "^1.17.3",
     "webpack": "^4.2.0"
   },
   "dependencies": {

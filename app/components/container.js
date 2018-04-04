@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Form from './form';
-import Main from './main';
 import { connect } from 'react-redux';
+import Form from './form'
+import Main from './main';
 
 class Container extends Component {
   constructor(props) {

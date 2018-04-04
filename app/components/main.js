@@ -26,8 +26,9 @@ class Main extends Component {
       },
     });
     setUISocket(socket);
-    socket.on(`hydrateUser:${user.id}`, (newState) => {
-      console.log('Hydrating with: ', newState);
+    socket.on(`hydrateUser:${user.id}`, (hydrateState) => {
+      console.log('Hydrating with: ', hydrateState);
+      dispatchAction(hydrateState);
     });
     socket.on('action', action => dispatchAction(action));
 
@@ -50,9 +51,9 @@ class Main extends Component {
         <p>{user.userName}</p>
         <p>event: {event}</p>
         <ul>
-        {
-          users.ids.map(id => <li key={id}>{users.byId[id].userName}</li>)
-        }
+          {
+            users.ids.map(id => <li key={id}>{users.byId[id].userName}</li>)
+          }
         </ul>
       </div>
     );

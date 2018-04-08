@@ -4,7 +4,7 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "nodemon --exec yarn electron ."
+    "start": "nodemon --exec npx electron ."
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [],

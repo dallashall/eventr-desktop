@@ -45,7 +45,7 @@ class Main extends Component {
       event,
       users,
     } = this.props;
-    console.log('main', this.props)
+    console.log('main props', this.props);
     return (
       <div className="container">
         <p>{user.userName}</p>

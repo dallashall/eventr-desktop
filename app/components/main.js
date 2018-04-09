@@ -17,7 +17,7 @@ class Main extends Component {
       setUISocket,
       dispatchAction,
     } = this.props;
-    const socket = io('http://localhost:8000', {
+    const socket = io('http://localhost:8080', {
       query: {
         payload: JSON.stringify({
           room: event || 'test',

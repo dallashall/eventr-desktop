@@ -12,5 +12,5 @@ export const setUIUser = user => dispatch => (
 );
 
 export const setUISocket = socket => dispatch => (
-  dispatch(action(RECEIVE_UI_SOCKET, { socket }))
+  dispatch(action(RECEIVE_UI_SOCKET, socket))
 );

@@ -39,6 +39,10 @@ class Main extends Component {
     // });
   }
 
+  clear = () => {
+    this.props.socket.emit('clear');
+  }
+
   render() {
     const {
       user,
@@ -55,6 +59,7 @@ class Main extends Component {
             users.ids.map(id => <li key={id}>{users.byId[id].userName}</li>)
           }
         </ul>
+        <button onClick={this.clear}>Clear</button>
       </div>
     );
   }
